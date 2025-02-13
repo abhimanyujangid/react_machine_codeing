@@ -1,0 +1,40 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.star-rating button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.star-rating .filled svg {
+  color: #e5ff64;
+  stroke: #ddff64;
+  fill: #beff64;
+}
+
+.star-rating .hovered svg{
+  color: #00fd26;
+  stroke: #3bfd00;
+  fill: #00fd0d;
+}
+
+.star-rating svg {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.star-rating .hovered .filled svg {
+  color: #003ffd;
+  stroke: #0072fd;
+  fill: #0d00fd;
+}
+
+.star-rating:hover svg {
+  transform: scale(1.1);
+}
